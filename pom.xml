@@ -77,6 +77,8 @@
     <testcontainers.version>1.20.2</testcontainers.version>
     <api.comparison.version>5.3</api.comparison.version>
     <hc.animal-sniffer.signature.ignores>javax.net.ssl.SSLEngine,javax.net.ssl.SSLParameters,java.nio.ByteBuffer,java.nio.CharBuffer</hc.animal-sniffer.signature.ignores>
+    <json.version>20240303</json.version>
+    <yaml.version>2.3</yaml.version>
   </properties>
 
   <dependencyManagement>
@@ -191,6 +193,16 @@
         <groupId>org.testcontainers</groupId>
         <artifactId>junit-jupiter</artifactId>
         <version>${testcontainers.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>${json.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>${yaml.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
